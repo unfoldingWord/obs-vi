@@ -65,6 +65,32 @@
   src: url('https://unfoldingword.org/css/fonts/noto/notosansdevanagari-bold.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosansdevanagari-bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: local('Noto Sans Myanmar'), local('NotoSansMyanmar');
+  src: url('https://unfoldingword.org/css/fonts/noto/notosansmyanmar-regular.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosansmyanmar-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  font-weight: bold;
+  src: local('Noto Sans Myanmar'), local('NotoSansMyanmar');
+  src: url('https://unfoldingword.org/css/fonts/noto/notosansmyanmar-bold.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosansmyanmar-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansKhmer';
+  src: local('Noto Sans Khmer'), local('NotoSansKhmer');
+  src: url('https://unfoldingword.org/css/fonts/noto/notosanskhmer-regular.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosanskhmer-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSansKhmer';
+  font-weight: bold;
+  src: local('Noto Sans Khmer'), local('NotoSansKhmer');
+  src: url('https://unfoldingword.org/css/fonts/noto/notosanskhmer-bold.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosanskhmer-bold.woff') format('woff');
+}
+
 * { font-family: 'NotoSans', sans-serif; }
 
 :lang(am),
@@ -90,6 +116,12 @@
 
 /* Devanagari script */
 :lang(sgj) { font-family: NotoSans, NotoSansDevanagari, sans-serif; }
+
+/* Burmese script */
+:lang(my) { font-family: NotoSans, NotoSansMyanmar, sans-serif; }
+
+/* Khmer script */
+:lang(km) { font-family: NotoSans, NotoSansKhmer, sans-serif; }
 
 /**
  * Default theme for reveal.js.

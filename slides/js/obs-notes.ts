@@ -98,10 +98,9 @@ class FlyOutNotes {
 	constructor() {
 
 		// get the url parts
-		var parts: string[] = window.location.pathname.split(/\//).filter(function(e) { return ((!!e) && (e.indexOf('unfolding') === -1)) });
-
+		var parts = window.location.pathname.match(/\/(\w*)\/\d*px\/(\d*)\//);
 		if (parts.length > 2) {
-			this.langCode = parts[0];
+			this.langCode = parts[1];
 			this.storyNum = parseInt(parts[2]);
 		}
 
